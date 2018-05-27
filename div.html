@@ -1,0 +1,214 @@
+<!--
+ Copyright 2016 Google Inc.
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+      http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="canonical" href="https://weather-pwa-sample.firebaseapp.com/final/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather - Developer Options</title>
+  <link rel="stylesheet" type="text/css" href="styles/inline.css">
+     <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="mdl/material.min.css">
+<script src="mdl/material.min.js"></script>
+  <!-- TODO add manifest here -->
+  <link rel="manifest" href="/manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#2d8ae6">
+  <meta name="apple-mobile-web-app-title" content="Weather PWA">
+  <link rel="apple-touch-icon" href="images/icons/icon-152x152.png">
+  <meta name="msapplication-TileImage" content="images/icons/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#2d8ae6">
+    <meta name="theme-color" content="#2d8ae6">
+    <style>
+        body{
+            
+        }
+        .if{
+            height:100%;
+            width:auto;
+            background:transparent;
+        }
+        .header__title{
+            color:#fff;
+          
+            height:40px;
+            width:40px;
+        }
+        .card{
+            background:#fff;
+            border-radius:2px;
+            width: auto;
+            margin-left:20px;
+            margin-right:20px;
+        height:1000px;
+            margin-top:75px;
+        }
+    </style>
+</head>
+<body>
+
+  <header class="header">
+     <a class="link" href="index.html">
+    <h1 class="header__title"><i class="material-icons">
+arrow_back
+</i></h1>
+        
+      </a> <h1 class="header__title">Developer Options</h1>
+  </header>
+  
+
+<div class="card">
+    <style>
+        .cticon{
+            color:#ff5252;
+            font-size:25px;
+            float:left;
+        }
+        .ctitle{
+            color: #212121;
+            font-size: 20px;
+            padding:10px;
+        }
+        .text{
+            float:left;
+            margin-top:2px;
+            margin-left:15px;
+        }
+      
+    </style>
+    <div class="ctitle"><i class="cticon material-icons">warning</i><div class="text">Experiments</div></div>
+    
+    
+    
+    <!-- List with avatar and controls -->
+<style>
+.demo-list-control {
+  width: 340px;
+}
+
+.demo-list-radio {
+  display: inline;
+}
+    .mdl-list__item-avatar{
+        background:transparent;
+    }
+    .icon-circle{
+        border-radius: 100%;
+        height:40px;
+        width:40px;
+        background:#0091ea;
+        color:#fff;
+        margin-right:15px;
+        padding-top: 7.5px;
+        padding-left: 7.5px;
+        font-size:25px;
+    }
+     .icon-circle2{
+        border-radius: 100%;
+        height:40px;
+        width:40px;
+        background:#ec407a;
+        color:#fff;
+        margin-right:15px;
+        padding-top: 7.5px;
+        padding-left: 7.5px;
+        font-size:25px;
+    }
+     .icon-circle3{
+        border-radius: 100%;
+        height:40px;
+        width:40px;
+        background:#607d8b;
+        color:#fff;
+        margin-right:15px;
+        padding-top: 7.5px;
+        padding-left: 7.5px;
+        font-size:25px;
+    }
+     .icon-circle4{
+        border-radius: 100%;
+        height:40px;
+        width:40px;
+        background:#ffc400;
+        color:#fff;
+        margin-right:15px;
+        padding-top: 7.5px;
+        padding-left: 7.5px;
+        font-size:25px;
+    }
+</style>
+
+<ul class="demo-list-control mdl-list">
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons icon-circle">file_download</i>
+      Download for offline usage
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
+        <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
+      </label>
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  icon-circle2">palette</i>
+      Enable theme color change
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-2">
+        <input type="checkbox" id="list-switch-2" class="mdl-switch__input" checked />
+      </label>
+    </span>
+  </li>
+  <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  icon-circle3">brightness_medium</i>
+      Dark theme
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-3">
+        <input type="checkbox" id="list-switch-3" class="mdl-switch__input" checked />
+      </label>
+    </span>
+  </li>
+     <li class="mdl-list__item">
+    <span class="mdl-list__item-primary-content">
+      <i class="material-icons  icon-circle4">accessibility</i>
+      High contrast mode
+    </span>
+    <span class="mdl-list__item-secondary-action">
+      <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-4">
+        <input type="checkbox" id="list-switch-4" class="mdl-switch__input" checked />
+      </label>
+    </span>
+  </li>
+</ul>
+    
+    
+    
+    </div>
+    
+
+  <!-- Uncomment the line below when ready to test with fake data -->
+  <script src="scripts/app.js" async></script>
+
+</body>
+</html>
